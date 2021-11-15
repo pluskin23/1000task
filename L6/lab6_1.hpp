@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <cmath>
+#include <math.h>
 
 //task 1
 int perimeter_square_count(int side_a) {
@@ -30,11 +31,10 @@ int perimeter_and_square_of_rectangle(int side_a, int side_b) {
     return 0;
 }
 //
-////task 4
-//int diameter(double d) {
-//    double p = 3.14;
-//    return  d * p;
-//}
+//task 4
+int length(double diameter, double p = 3.14){
+    return diameter * p;
+}
 //
 ////task 5.1
 //int v_of_cube(int a) {
