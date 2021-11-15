@@ -5,8 +5,9 @@
 int main(){
     setlocale(LC_ALL, "ru");
     
-    int side_a;
+    int side_a, side_b;
     std::cin >> side_a;
-    std::cout << square_cout(side_a) << std::endl;
+    std::cin >> side_b;
+    std::cout << perimeter_and_square_of_rectangle(int side_a, int side_b) << std::endl;
     
 }

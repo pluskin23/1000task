@@ -5,29 +5,29 @@
 #include <cmath>
 
 //task 1
-int perimeter_count(int side_a) {
+int perimeter_square_count(int side_a) {
     return side_a * 4;
 }
 
 //task 2
-int square_cout(int side_a) {
+int square_of_square_cout(int side_a) {
     return pow(side_a, 2);
 }
 //
-////task3.1
-//int perimeter(int a, int b) {
-//    return 2 * (a + b);
-//}
+//task3.1
+int perimeter_of_rectangle_count(int side_a, int side_b) {
+    return 2 * (side_a + side_b);
+}
 //
-////task3.2
-//int square(int a, int b) {
-//    return a * b;
-//}
-//
-////task 3
-//void perimeterSquare(int a, int b) {
-//    std::cout << square(a, b) << perimeter(a, b);
-//}
+//task3.2
+int square_of_rectangle_count(int side_a, int side_b) {
+    return side_a * side_b;
+}
+
+//task 3
+int perimeter_and_square_of_rectangle(int side_a, int side_b) {
+    std::cout << square_of_rectangle_count(side_a, side_b) << perimeter_of_rectangle_count(side_a, side_b);
+}
 //
 ////task 4
 //int diameter(double d) {
