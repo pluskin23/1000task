@@ -429,13 +429,7 @@ int degree_of_a_in_15(int a) {
 
 //task 28 
 int degreeOfA2(int A) {
-	int a = A * A;
-	int a1 = a * A;
-	int a2 = a1 * a;
-	int a3 = a2 * a2;
-	int a4 = a3 * a2;
-	std::cout << a << "/t" << a1 << "/t" << a2 << "/t" << a3 << "/t" << a4;
-	return a, a1, a2, a3, a4;
+	std::cout << degree_of_a_in_2(a) << degree_of_a_in_3(a) << degree_of_a_in_5(a) << degree_of_a_in_10(a) << degree_of_a_in_15(a);
 }
 
 //task 29
