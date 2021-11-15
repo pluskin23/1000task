@@ -26,7 +26,8 @@ int square_of_rectangle_count(int side_a, int side_b) {
 
 //task 3
 int perimeter_and_square_of_rectangle(int side_a, int side_b) {
-    std::cout << square_of_rectangle_count(side_a, side_b) << perimeter_of_rectangle_count(side_a, side_b);
+    std::cout << square_of_rectangle_count(side_a, side_b) << std::endl <<  perimeter_of_rectangle_count(side_a, side_b);
+    return 0;
 }
 //
 ////task 4
