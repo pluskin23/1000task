@@ -80,7 +80,7 @@ int square_of_circle(double radius) {
 }
 
 //task 7
-void length_and_square_of_circle (double radius = 5 ) {
+void length_and_square_of_circle (double radius) {
     std::cout << length_of_circle(radius) << std::endl << square_of_circle(radius) << std::endl;
 }
 
