@@ -6,12 +6,12 @@
 #include <math.h>
 
 //task 1
-int perimeter_square_count(int side_a = 2) {
+int perimeter_square_count(int side_a) {
     return side_a * 4;
 }
 
 //task 2
-int square_of_square_cout(int side_a = 3) {
+int square_of_square_cout(int side_a) {
     return pow(side_a, 2);
 }
 //
@@ -26,8 +26,9 @@ int square_of_rectangle_count(int side_a, int side_b) {
 }
 
 //task 3
-void perimeter_and_square_of_rectangle(int side_a, int side_b) {
+int perimeter_and_square_of_rectangle(int side_a, int side_b) {
     std::cout << square_of_rectangle_count(side_a, side_b) << std::endl <<  perimeter_of_rectangle_count(side_a, side_b) << std::endl;
+    return 0;
 }
 //
 //task 4
@@ -83,8 +84,9 @@ int square_of_circle(double radius) {
 }
 
 //task 7
-void length_and_square_of_circle (double radius) {
+int length_and_square_of_circle (double radius) {
     std::cout << length_of_circle(radius) << std::endl << square_of_circle(radius) << std::endl;
+    return 0;
 }
 
 //task 8
@@ -121,7 +123,7 @@ int prod_sq_of_nonzero_numbers(int num_a, int num_b) {
     return pow(num_a, 2) * pow(num_b, 2);
 }
 
-//task 10
+//task 10.4
 int quot_sq_of_nonzero_numbers(int num_a, int num_b) {
     if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
@@ -135,44 +137,45 @@ int sum_diff_prod_quot_of_nonzero_numbers(int num_a, int num_b) {
     return 0;
 }
 
-////task 11.sum
-//int sum_of_module_notnull_numders(int a, int b) {
-//    if (a == 0 && b == 0) {
-//        std::cout << "a and b must != 0";
-//    }
-//    return fabs(a) + fabs(b);
-//}
-//
-////task 11.diff
-//int diff_of_module_notnull_numbers(int a, int b) {
-//    if (a == 0 && b == 0) {
-//        std::cout << "a and b must != 0";
-//    }
-//    return fabs(a) - fabs(b);
-//}
-//
-////task 11.prod
-//int prod_of_module_notnull_numbers(int a, int b) {
-//    if (a == 0 && b == 0) {
-//        std::cout << "a and b must != 0";
-//    }
-//    return fabs(a) * fabs(b);
-//}
-//
-////task 11.quot
-//int quot_of_module_notnull_numbers(int a, int b) {
-//    if (a == 0 && b == 0) {
-//        std::cout << "a and b must != 0";
-//    }
-//    return fabs(a) / fabs(b);
-//}
-//
-//
-////task 11
-//void sum_diif_prod_qout_of_module_notnull(int a, int b) {
-//    std::cout << sum_of_module_notnull_numders(a, b) << diff_of_module_notnull_numbers(a, b) << prod_of_module_notnull_numbers(a, b) << quot_of_module_notnull_numbers(a, b);
-//}
-//
+//task 11
+int sum_of_module_notnull_numders(int num_a, int num_b) {
+    if (num_a == 0 && num_b == 0) {
+        std::cout << "numbers must be != 0";
+    }
+    return fabs(num_a) + fabs(num_b);
+}
+
+//task 11.1
+int diff_of_module_notnull_numbers(int a, int b) {
+    if (a == 0 && b == 0) {
+        std::cout << "numbers must be != 0";
+    }
+    return fabs(a) - fabs(b);
+}
+
+//task 11.prod
+int prod_of_module_notnull_numbers(int a, int b) {
+    if (a == 0 && b == 0) {
+        std::cout << "numbers must be != 0";
+    }
+    return fabs(a) * fabs(b);
+}
+
+//task 11.quot
+int quot_of_module_notnull_numbers(int a, int b) {
+    if (a == 0 && b == 0) {
+        std::cout << "numbers must be != 0";
+    }
+    return fabs(a) / fabs(b);
+}
+
+
+//task 11
+int sum_diif_prod_qout_of_module_notnull(int a, int b) {
+    std::cout << sum_of_module_notnull_numders(a, b) << diff_of_module_notnull_numbers(a, b) << prod_of_module_notnull_numbers(a, b) << quot_of_module_notnull_numbers(a, b);
+    return 0;
+}
+
 ////task 12.1
 //int hypotenuse_of_triangle(int a, int b) {
 //    return sqrt(pow(a, 2) + pow(b, 2));
