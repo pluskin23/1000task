@@ -6,12 +6,12 @@
 #include <math.h>
 
 //task 1
-int perimeter_square_count(int side_a) {
+int perimeter_square_count(int side_a = 2) {
     return side_a * 4;
 }
 
 //task 2
-int square_of_square_cout(int side_a) {
+int square_of_square_cout(int side_a = 3) {
     return pow(side_a, 2);
 }
 //
@@ -26,9 +26,8 @@ int square_of_rectangle_count(int side_a, int side_b) {
 }
 
 //task 3
-int perimeter_and_square_of_rectangle(int side_a, int side_b) {
+void perimeter_and_square_of_rectangle(int side_a, int side_b) {
     std::cout << square_of_rectangle_count(side_a, side_b) << std::endl <<  perimeter_of_rectangle_count(side_a, side_b) << std::endl;
-    return 0;
 }
 //
 //task 4
@@ -59,6 +58,10 @@ int volume_of_rectangular_parallelepiped(int edge_length_a, int edge_length_b, i
 
 //task 6.2
 int surface_area(int edge_length_a, int edge_length_b, int edge_length_c) {
+    if (edge_length_a <= 0 || edge_length_b  <= 0 || edge_length_c <= 0){
+        std::cout << "some of length less or equal zero";
+        return 1;
+    }
     return 2 * (edge_length_a * edge_length_b + edge_length_b * edge_length_c + edge_length_a * edge_length_c);
 }
 
