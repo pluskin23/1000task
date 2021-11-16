@@ -36,11 +36,11 @@ int length(double diameter, double p = 3.14){
     return diameter * p;
 }
 //
-////task 5.1
+//task 5.1
 //int v_of_cube(int a) {
 //    return pow(a, 3);
 //}
-//
+
 ////task 5.2
 //int square_of_cube(int a) {
 //    return 6 * pow(a, 2);

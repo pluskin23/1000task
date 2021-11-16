@@ -7,7 +7,7 @@ int main(){
     setlocale(LC_ALL, "ru");
     
     double diameter;
-    double p;
+    double p = 3.14;
     std::cin >> diameter;
     std::cout << length(diameter, p) << std::endl;
     
