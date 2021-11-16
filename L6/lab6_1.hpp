@@ -68,23 +68,22 @@ int volume_of_rectangular_parallelepiped_and_surface_area(int edge_length_a, int
     return 0;
 }
 
-////task 7.1
-//int length_of_circle(double R) {
-//    double p = 3.14;
-//    return 2 * p * R;
-//}
-//
-////task 7.2
-//int square_of_circle(double R) {
-//    double p = 3.14;
-//    return p * pow(R, 2);
-//}
-//
-////task 7
-//void lengthCirc(double R) {
-//    std::cout << length_of_circle(R) << square_of_circle(R);
-//}
-//
+//task 7.1
+int length_of_circle(double R) {
+    double p = 3.14;
+    return 2 * p * R;
+}
+//task 7.2
+int square_of_circle(double R) {
+    double p = 3.14;
+    return p * pow(R, 2);
+}
+
+//task 7
+void lengthCirc(double R) {
+    std::cout << length_of_circle(R) << square_of_circle(R);
+}
+
 ////task 8
 //int average(int a, int b) {
 //    return (a + b) / 2;
@@ -176,7 +175,7 @@ int volume_of_rectangular_parallelepiped_and_surface_area(int edge_length_a, int
 //}
 //
 ////task 12.2
-//int perimeter_of_right_triangle(int a, int b,int hypotenuse_of_triangle) {
+//int perimeter_of_right_triangle(int a, int b, int hypotenuse_of_triangle) {
 //    return a + b + hypotenuse_of_triangle;
 //}
 //
@@ -342,6 +341,7 @@ int volume_of_rectangular_parallelepiped_and_surface_area(int edge_length_a, int
 //    return 0;
 //}
 //
+//
 ////task 22
 //int swipe(int A, int B) {
 //    int t = A;
@@ -374,33 +374,67 @@ int volume_of_rectangular_parallelepiped_and_surface_area(int edge_length_a, int
 ////task 25
 //int whatFunction1(int x) {
 //    int y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
-//    return y;
+//    return 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
 //}
 //
 ////task 26
 //int whatFunktion2(int x) {
 //    int y = 4 * pow(x - 3, 6) - 7 * pow(x - 3, 3) + 2;
-//    return y;
+//    return 4 * pow(x - 3, 6) - 7 * pow(x - 3, 3) + 2;
+//}
+//
+////task 27.1
+//int degree_of_a_in_2(int a) {
+//    int a_in_2 = a * a;
+//    return a_in_2;
+//}
+//
+////task 27.2
+//int degree_of_a_in_4(int a) {
+//    int a_int_4 = degree_of_a_in_2(a) * degree_of_a_in_2(a);
+//    return a_int_4;
+//}
+//
+////task 27.3
+//int degree_of_a_in_8(int a) {
+//    int a_in_8 = degree_of_a_in_4(a) * degree_of_a_in_4(a);
+//    return a_in_8;
 //}
 //
 ////task 27
 //int degreeOfA(int A) {
-//    int a = A * A;
-//    int a1 = a * a;
-//    int a2 = a1 * a1;
-//    std::cout << a << "/t" << a1 << "/t" << a2;
-//    return a, a1, a2;
+//    std::cout << degree_of_a_in_2(a) << degree_of_a_in_4(a) << degree_of_a_in_8(a);
+//    return 0;
+//}
+//
+////task 28.1
+//int degree_of_a_in_3(int a) {
+//    int a_in_3 = degree_of_a_in_2(a) * a;
+//    return a_in_3;
+//}
+//
+////task 28.2
+//int degree_of_a_in_5(int a) {
+//    int a_in_5 = degree_of_a_in_3(a) * degree_of_a_in_2(a);
+//    return a_in_5;
+//}
+//
+////task 28.3
+//int degree_of_a_in_10(int a) {
+//    int a_in_10 = degree_of_a_in_5(a) * degree_of_a_in_5(a);
+//    return a_in_10;
+//}
+//
+////task 28.4
+//int degree_of_a_in_15(int a) {
+//    int a_in_15 = degree_of_a_in_5(a) * degree_of_a_in_10(a);
+//    return a_in_15;
 //}
 //
 ////task 28
 //int degreeOfA2(int A) {
-//    int a = A * A;
-//    int a1 = a * A;
-//    int a2 = a1 * a;
-//    int a3 = a2 * a2;
-//    int a4 = a3 * a2;
-//    std::cout << a << "/t" << a1 << "/t" << a2 << "/t" << a3 << "/t" << a4;
-//    return a, a1, a2, a3, a4;
+//    std::cout << degree_of_a_in_2(a) << degree_of_a_in_3(a) << degree_of_a_in_5(a) << degree_of_a_in_10(a) << degree_of_a_in_15(a);
+//    return 0;
 //}
 //
 ////task 29
@@ -424,7 +458,17 @@ int volume_of_rectangular_parallelepiped_and_surface_area(int edge_length_a, int
 //    return aRad;
 //}
 //
-//#endif /* util_h */
+////task 31
+//int fahrenheit_to_celsius_converter(double t) {
+//    return (t - 32) * 5 / 9;
+//}
 //
+////task 32
+//int celsius_to_fahrenheit_converter(double t) {
+//    return (t + 32) / 5 / 9;
+//}
 //
-//#endif /* lab6_1_hpp */
+////task 33
+//int candies_count(int a, int y, int x) {
+//    return 0;
+//}
