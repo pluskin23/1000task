@@ -32,8 +32,8 @@ int perimeter_and_square_of_rectangle(int side_a, int side_b) {
 }
 //
 //task 4
-int length(double diameter, double p = 3.14){
-    return diameter * p;
+int length(double diameter){
+    return diameter * M_PI;
 }
 //
 //task 5.1
@@ -63,25 +63,26 @@ int surface_area(int edge_length_a, int edge_length_b, int edge_length_c) {
 }
 
 //task 6
-int volume_of_rectangular_parallelepiped_and_surface_area(int edge_length_a, int edge_length_b, int edge_length_c) {
+int vol_of_rect_parall_and_surf_area(int edge_length_a, int edge_length_b, int edge_length_c) {
+    
     std::cout << volume_of_rectangular_parallelepiped(edge_length_a, edge_length_b, edge_length_c) << std::endl << surface_area(edge_length_a, edge_length_b, edge_length_c) << std::endl;
+    
     return 0;
 }
 
 //task 7.1
-int length_of_circle(double R) {
-    double p = 3.14;
-    return 2 * p * R;
+int length_of_circle(double radius) {
+    return 2 * M_PI * radius;
 }
 //task 7.2
-int square_of_circle(double R) {
-    double p = 3.14;
-    return p * pow(R, 2);
+int square_of_circle(double radius) {
+    return M_PI * pow(radius, 2);
 }
 
 //task 7
-void lengthCirc(double R) {
-    std::cout << length_of_circle(R) << square_of_circle(R);
+int length_and_square_of_circle (double radius) {
+    std::cout << length_of_circle(radius) << std::endl << square_of_circle(radius) << std::endl;
+    return 0;
 }
 
 ////task 8
