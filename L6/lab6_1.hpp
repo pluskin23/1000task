@@ -80,9 +80,8 @@ int square_of_circle(double radius) {
 }
 
 //task 7
-int length_and_square_of_circle (double radius) {
+void length_and_square_of_circle (double radius = 5 ) {
     std::cout << length_of_circle(radius) << std::endl << square_of_circle(radius) << std::endl;
-    return 0;
 }
 
 //task 8
@@ -127,11 +126,12 @@ int quot_sq_of_nonzero_numbers(int num_a, int num_b) {
     return pow(num_a, 2) / pow(num_b, 2);
 }
 
-////task 10
-//void sum_diff_prod_qout_of_notnull(int a, int b) {
-//    std::cout << sum_of_nonnull_numbers(a, b) << diff_of_notnull_numbers(a, b) << prod_of_notnull_numbers(a, b) << quot_of_notnull_numbers(a, b);
-//}
-//
+//task 10
+int sum_diff_prod_quot_of_nonzero_numbers(int num_a, int num_b) {
+    std::cout << sum_of_nonzero_numbers(num_a, num_b) << std::endl << diff_of_nonzero_numbers(num_a, num_b) << std::endl << prod_sq_of_nonzero_numbers(num_a, num_b) << std::endl << quot_sq_of_nonzero_numbers(num_a, num_b);
+    return 0;
+}
+
 ////task 11.sum
 //int sum_of_module_notnull_numders(int a, int b) {
 //    if (a == 0 && b == 0) {
