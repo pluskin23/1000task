@@ -401,6 +401,7 @@ int degree_of_a_in_8(int a) {
 //task 27 
 int degreeOfA(int A) {
 	std::cout << degree_of_a_in_2(a) << degree_of_a_in_4(a) << degree_of_a_in_8(a);
+	return 0;
 }
 
 //task 28.1 
@@ -430,6 +431,7 @@ int degree_of_a_in_15(int a) {
 //task 28 
 int degreeOfA2(int A) {
 	std::cout << degree_of_a_in_2(a) << degree_of_a_in_3(a) << degree_of_a_in_5(a) << degree_of_a_in_10(a) << degree_of_a_in_15(a);
+	return 0;
 }
 
 //task 29
@@ -452,3 +454,21 @@ int radiansToDegrees(double a) {
 	double aRad = rad * a;
 	return aRad;
 }
+
+//task 31
+int fahrenheit_to_celsius_converter(double t) {
+	return (t - 32) * 5 / 9;
+}
+
+//task 32
+int celsius_to_fahrenheit_converter(double t) {
+	return (t + 32) / 5 / 9;
+}
+
+//task 33
+int candies_count(int a, int y, int x) {
+	return 0;
+}
+
+//task 34
+int 
