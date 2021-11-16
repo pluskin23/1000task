@@ -6,8 +6,10 @@
 int main(){
     setlocale(LC_ALL, "ru");
     
-    int radius;
-    std::cin >> radius;
-    std::cout << length_and_square_of_circle(radius) << std::endl;
+    int num_a;
+    int num_b;
+    std::cin >> num_a;
+    std::cin >> num_b;
+    std::cout << geometric_mean(num_a, num_b) << std::endl;
     
 }

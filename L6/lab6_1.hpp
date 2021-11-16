@@ -85,48 +85,48 @@ int length_and_square_of_circle (double radius) {
     return 0;
 }
 
-////task 8
-//int average(int a, int b) {
-//    return (a + b) / 2;
-//}
-//
-////task 9
-//int geometricalAvg(int a, int b) {
-//    return sqrt(a * b);
-//}
-//
-////task 10.sum
-//int sum_of_nonnull_numbers(int a, int b) {
-//    if (a == 0 || b == 0) {
-//        std::cout << "a and b must be != 0";
-//    }
-//    return a + b;
-//}
-//
-////task 10.diff
-//int diff_of_notnull_numbers(int a, int b) {
-//    if (a == 0 && b == 0) {
-//        std::cout << "a and b must != 0";
-//    }
-//    return a - b;
-//}
-//
-////task 10.prod
-//int prod_of_notnull_numbers(int a, int b) {
-//    if (a == 0 && b == 0) {
-//        std::cout << "a and b must != 0";
-//    }
-//    return a * b;
-//}
-//
-////task 10.quot
-//int quot_of_notnull_numbers(int a, int b) {
-//    if (a == 0 && b == 0) {
-//        std::cout << "a and b must != 0";
-//    }
-//    return a / b;
-//}
-//
+//task 8
+int average(int num_a, int num_b) {
+    return (num_a + num_b) / 2;
+}
+
+//task 9
+int geometric_mean(int num_a, int num_b) {
+    return sqrt(num_a * num_b);
+}
+
+//task 10.1
+int sum_of_nonzero_numbers(int num_a, int num_b) {
+    if (num_a == 0 || num_b == 0) {
+        std::cout << "numbers must be != 0";
+    }
+    return num_a + num_b;
+}
+
+//task 10.2
+int diff_of_nonzero_numbers(int num_a, int num_b) {
+    if (num_a == 0 || num_b == 0) {
+        std::cout << "numbers must be != 0";
+    }
+    return num_a - num_b;
+}
+
+//task 10.3
+int prod_sq_of_nonzero_numbers(int num_a, int num_b) {
+    if (num_a == 0 || num_b == 0) {
+        std::cout << "numbers must be != 0";
+    }
+    return pow(num_a, 2) * pow(num_b, 2);
+}
+
+//task 10
+int quot_sq_of_nonzero_numbers(int num_a, int num_b) {
+    if (num_a == 0 || num_b == 0) {
+        std::cout << "numbers must be != 0";
+    }
+    return pow(num_a, 2) / pow(num_b, 2);
+}
+
 ////task 10
 //void sum_diff_prod_qout_of_notnull(int a, int b) {
 //    std::cout << sum_of_nonnull_numbers(a, b) << diff_of_notnull_numbers(a, b) << prod_of_notnull_numbers(a, b) << quot_of_notnull_numbers(a, b);
