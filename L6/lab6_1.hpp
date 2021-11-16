@@ -27,7 +27,7 @@ int square_of_rectangle_count(int side_a, int side_b) {
 
 //task 3
 int perimeter_and_square_of_rectangle(int side_a, int side_b) {
-    std::cout << square_of_rectangle_count(side_a, side_b) << std::endl <<  perimeter_of_rectangle_count(side_a, side_b);
+    std::cout << square_of_rectangle_count(side_a, side_b) << std::endl <<  perimeter_of_rectangle_count(side_a, side_b) << std::endl;
     return 0;
 }
 //
@@ -37,36 +37,37 @@ int length(double diameter, double p = 3.14){
 }
 //
 //task 5.1
-int v_of_cube(int a) {
-    return pow(a, 3);
+int cube_volume(int edge_length) {
+    return pow(edge_length, 3);
 }
 
-////task 5.2
-//int square_of_cube(int a) {
-//    return 6 * pow(a, 2);
-//}
-//
+//task 5.2
+int surface_area(int edge_length) {
+    return 6 * pow(edge_length, 2);
+}
+
 ////task 5
-//void lengthQub(int a) {
-//    std::cout << v_of_cube(a) << square_of_cube(a);
-//}
-//
-////task 6.1
-//int v_of_parallelepiped(int a, int b, int c) {
-//    return a * b * c;
-//}
-//
-////task 6.2
-//int square_of_parallelepiped(int a, int b, int c) {
-//    return 2 * (a * b + b * c + a * c);
-//}
-//
-////task 6
-//int parallelepiped(int a, int b, int c) {
-//    std::cout << v_of_parallelepiped(a, b, c) << "\t" << square_of_parallelepiped(a, b, c);
-//    return 0;
-//}
-//
+int  cube_volume_and_surface_area (int edge_length) {
+    std::cout << cube_volume(edge_length) << std::endl << surface_area(edge_length) << std::endl;
+    return 0;
+}
+
+//task 6.1
+int volume_of_rectangular_parallelepiped(int edge_length_a, int edge_length_b, int edge_length_c) {
+    return edge_length_a* edge_length_b * edge_length_c;
+}
+
+//task 6.2
+int surface_area(int edge_length_a, int edge_length_b, int edge_length_c) {
+    return 2 * (edge_length_a * edge_length_b + edge_length_b * edge_length_c + edge_length_a * edge_length_c);
+}
+
+//task 6
+int volume_of_rectangular_parallelepiped_and_surface_area(int edge_length_a, int edge_length_b, int edge_length_c) {
+    std::cout << volume_of_rectangular_parallelepiped(edge_length_a, edge_length_b, edge_length_c) << std::endl << surface_area(edge_length_a, edge_length_b, edge_length_c) << std::endl;
+    return 0;
+}
+
 ////task 7.1
 //int length_of_circle(double R) {
 //    double p = 3.14;
