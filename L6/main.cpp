@@ -34,6 +34,9 @@ int main(){
     std::cout << square_of_circles(3, 2) << std::endl;
     std::cout << "task14##################" << std::endl;
     std::cout << radius_and_square_of_circle_bounded_by_circle(32) << std::endl;
+    std::cout << "task15##################" << std::endl;
+    std::cout << diameter_and_length_of_circ_limited_by_circle(4) << std::endl;
+    
     
     
     

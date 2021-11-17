@@ -221,39 +221,36 @@ int square_of_circles(int radius_1, int radius_2) {
 }
 
 //task 14.1
-int radius_cr_limited_by_circle(int length_l) {
+int radius_circ_limited_by_circle(int length_l) {
     return length_l / (2 * M_PI);
 }
 
 //task 14.2
-int square_cr_limited_by_circle(int lenght_l) {
-    int radius = radius_cr_limited_by_circle(lenght_l);
-    return M_PI * pow(radius, 2);
+int square_circ_limited_by_circle(int lenght_l) {
+    return M_PI * pow(radius_circ_limited_by_circle(lenght_l), 2);
 }
 
 //task 14
 int radius_and_square_of_circle_bounded_by_circle(int lenght_l) {
-    std::cout << radius_cr_limited_by_circle(lenght_l) << std::endl << square_cr_limited_by_circle(lenght_l) << std::endl;
+    std::cout << radius_circ_limited_by_circle(lenght_l) << std::endl << square_circ_limited_by_circle(lenght_l) << std::endl;
     return 0;
 }
 
-////task 15.1
-//int diameter_of_limiter_circle(double s) {
-//    double p = 3.14;
-//    return sqrt(s / p * 4);
-//}
-//
-////task 15.2
-//int length_of_limiter_circle(double s) {
-//    double p = 3.14;
-//    int d = diameter_of_limiter_circle(s);
-//    return p * d;
-//}
-//
-//// task 15
-//void diameter_and_length_of_limiter_circle(double s) {
-//    std::cout << diameter_of_limiter_circle(s) << length_of_limiter_circle(s);
-//}
+//task 15.1
+int diameter_circ_limited_by_circle(int square) {
+    return sqrt(square / M_PI * 4);
+}
+
+//task 15.2
+int lenght_circ_limited_by_circle(int square) {
+    return M_PI * diameter_circ_limited_by_circle(square);
+}
+
+// task 15
+int diameter_and_length_of_circ_limited_by_circle(int square) {
+    std::cout << diameter_circ_limited_by_circle(square) << std::endl << lenght_circ_limited_by_circle(square) << std::endl;
+    return 0;
+}
 //
 ////task 16
 //int twodots(int x1, int x2) {
