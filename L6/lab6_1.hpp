@@ -209,13 +209,14 @@ int square_of_circle_2(int radius_1, int radius_2) {
 }
 
 //task 13.3
-int square_of_circle3(int square_of_circle_1, int square_of_circle_2) {
+int square_of_circle_3(int square_of_circle_1, int square_of_circle_2) {
     return square_of_circle_1 - square_of_circle_2;
 }
 
 //task 13
 int square_of_circles(int radius_1, int radius_2) {
-    std::cout << square_of_circle_1(radius_1, radius_2) << std::endl << square_of_circle_2(radius_1, radius_2) << square_of_circle_3(square_of_circle_1, square_of_circle_2);
+    std::cout << square_of_circle_1(radius_1, radius_2) << std::endl << square_of_circle_2(radius_1, radius_2) << std::endl <<
+    square_of_circle_3(3, 2) << std::endl;
     return 0;
 }
 
