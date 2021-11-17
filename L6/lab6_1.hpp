@@ -166,7 +166,7 @@ int quot_of_modules_nonzero_numbers(int num_a, int num_b) {
     if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
     }
-    return fabs(num_a) / fabs(num_b);;
+    return fabs(num_a) / fabs(num_b);
 }
 
 
@@ -177,12 +177,12 @@ int sum_diif_prod_quot_of_modules_nonzero_numbers(int num_a, int num_b) {
 }
 
 //task 12.1
-int hypotenuse_of_triangle(int a, int b) {
-    return sqrt(pow(a, 2) + pow(b, 2));
+int hypotenuse_of_triangle(int num_a, int num_b) {
+    return sqrt(pow(num_a, 2) + pow(num_b, 2));
 }
 
 //task 12.2
-int perimeter_of_right_triangle(int a, int b, int hypotenuse_of_triangle) {
+int perimeter_of_right_triangle(int num_a, int num_b, int hypotenuse_of_triangle) {
     return a + b + hypotenuse_of_triangle;
 }
 
