@@ -40,6 +40,10 @@ int main(){
     std::cout << distance_between_points(6, 2) << std::endl;
     std::cout << "task17##################" << std::endl;
     std::cout << sum_segments_ac_and_bc(2, 3, 4) << std::endl;
+    std::cout << "task18##################" << std::endl;
+    std::cout << product_of_segments_ac_and_bc(3, 4, 5) << std::endl;
+    
+    
     
      
     

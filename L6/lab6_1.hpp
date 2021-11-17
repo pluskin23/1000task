@@ -270,19 +270,22 @@ int sum_segments_ac_and_bc(int point_a, int point_b, int point_c){
     return segment_ac(point_a,point_b, point_c) + segment_bc(point_a,point_b, point_c);
 }
     
-////task 18
-//int lengthOtr(int a, int b, int c) {
-//    if (a < c < b) {
-//        std::cout << "C must be between A and C";
-//    }
-//    int ac = a + c;
-//    int bc = b + c;
-//    return ac + bc;
-//}
-//
+//task 18.1
+int segment_ac_on_numeric_line(int point_a, int point_b, int point_c){
+    return abs(point_a - point_c);
+}
+//task 18.2
+int segment_bc_on_numeric_line(int point_a, int point_b, int point_c){
+    return abs(point_b - point_c);
+}
+//task 18.3
+int product_of_segments_ac_and_bc(int point_a, int point_b, int point_c){
+    return segment_ac_on_numeric_line(point_a, point_b, point_c) * segment_bc_on_numeric_line(point_a, point_b, point_c);
+}
+
 ////task 19.1
 //
-//int perimeter_of_point_rectangle(int x1, int x2, int y1, int y2) {
+//int rectangle_perimeter(int coordinate_x1, int coordinate_y1, int coordinate_x2 int coordinate_y2 {
 //    if (x1 > x2 && y1 > y2) {
 //        std::cout << "x2 and y2 must be > x1 and y2";
 //    }
@@ -293,7 +296,7 @@ int sum_segments_ac_and_bc(int point_a, int point_b, int point_c){
 //    double p = a * 4;
 //    return p;
 //}
-//
+
 ////task 19.2
 //int square_of_point_rectalnge(int x1, int x2, int y1, int y2) {
 //    if (x1 > x2 && y1 > y2) {
