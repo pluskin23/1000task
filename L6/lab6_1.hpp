@@ -192,34 +192,33 @@ int hypotenuse_and_perimeter_of_right_triangle(int cathet_a, int cathet_b, int h
     return 0; 
 }
 
-////task 13.1
-//int square_of_circle1(int r1, int r2) {
-//    double p = 3.14;
-//    if (r2 > r1) {
-//        std::cout << "R1 must be > R2";
-//    }
-//    return p * pow(r1, 2);
-//}
-//
-////task 13.2
-//int square_of_circle2(int r1, int r2) {
-//    double p = 3.14;
-//    if (r2 > r1) {
-//        std::cout << "R1 must be > R2";
-//    }
-//    return p * pow(r2, 2);
-//}
-//
-////task 13.3
-//int square_of_circle3(int square_of_circle1, int square_of_circle2) {
-//    return square_of_circle1 - square_of_circle2;
-//}
-//
-////task 13
-//void square_of_circles(int r1, int r2) {
-//    std::cout << square_of_circle1(r1, r2) << square_of_circle2(r1, r2) << square_of_circle3(r1, r2);
-//}
-//
+//task 13.1
+int square_of_circle_1(int radius_1, int radius_2) {
+    if (radius_2 > radius_1) {
+        std::cout << "radius_1 must be > radius_2";
+    }
+    return M_PI * pow(radius_1, 2);
+}
+
+//task 13.2
+int square_of_circle_2(int radius_1, int radius_2) {
+    if (radius_2 > radius_1) {
+        std::cout << "radius_1 must be > radius_2";
+    }
+    return M_PI * pow(radius_2, 2);
+}
+
+//task 13.3
+int square_of_circle3(int square_of_circle_1, int square_of_circle_2) {
+    return square_of_circle_1 - square_of_circle_2;
+}
+
+//task 13
+int square_of_circles(int radius_1, int radius_2) {
+    std::cout << square_of_circle_1(radius_1, radius_2) << std::endl << square_of_circle_2(radius_1, radius_2) << square_of_circle_3(square_of_circle_1, square_of_circle_2);
+    return 0;
+}
+
 ////task 14.1
 //int radius_of_circle(int l) {
 //    double p = 3.14;
