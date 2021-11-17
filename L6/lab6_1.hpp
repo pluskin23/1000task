@@ -177,18 +177,19 @@ int sum_diif_prod_quot_of_modules_nonzero_numbers(int num_a, int num_b) {
 }
 
 //task 12.1
-int hypotenuse_of_triangle(int num_a, int num_b) {
-    return sqrt(pow(num_a, 2) + pow(num_b, 2));
+int hypotenuse_of_triangle(int cathet_a, int cathet_b) {
+    return sqrt(pow(cathet_a, 2) + pow(cathet_b, 2));
 }
 
 //task 12.2
-int perimeter_of_right_triangle(int num_a, int num_b, int hypotenuse_of_triangle) {
-    return a + b + hypotenuse_of_triangle;
+int perimeter_of_right_triangle(int cathet_a, int cathet_b, int hypotenuse) {
+    return cathet_a + cathet_b + hypotenuse;
 }
 
 //task 12
-void hypotenuse_and_perimeter_of_right_triangle(int a, int b, int c) {
-    std::cout << hypotenuse_of_triangle(a, b) << perimeter_of_right_triangle(a, b, c);
+int hypotenuse_and_perimeter_of_right_triangle(int cathet_a, int cathet_b, int hypotenuse) {
+    std::cout << hypotenuse_of_triangle(cathet_a, cathet_b) << std::endl << perimeter_of_right_triangle(cathet_a, cathet_b, hypotenuse) << std::endl;
+    return 0; 
 }
 
 ////task 13.1

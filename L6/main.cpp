@@ -28,6 +28,8 @@ int main(){
     std::cout << sum_diff_prod_quot_of_nonzero_numbers(6, 2) << std::endl;
     std::cout << "task11##################" << std::endl;
     std::cout << sum_diif_prod_quot_of_modules_nonzero_numbers(5, 2) << std::endl;
+    std::cout << "task12##################" << std::endl;
+    std::cout << hypotenuse_and_perimeter_of_right_triangle(2, 3, 4) << std::endl;
     
     
     
