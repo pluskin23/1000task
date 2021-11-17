@@ -36,6 +36,13 @@ int main(){
     std::cout << radius_and_square_of_circle_bounded_by_circle(32) << std::endl;
     std::cout << "task15##################" << std::endl;
     std::cout << diameter_and_length_of_circ_limited_by_circle(4) << std::endl;
+    std::cout << "task16##################" << std::endl;
+    std::cout << distance_between_points(6, 2) << std::endl;
+    
+     
+    
+    
+    
     
     
     

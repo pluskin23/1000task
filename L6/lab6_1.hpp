@@ -251,11 +251,11 @@ int diameter_and_length_of_circ_limited_by_circle(int square) {
     std::cout << diameter_circ_limited_by_circle(square) << std::endl << lenght_circ_limited_by_circle(square) << std::endl;
     return 0;
 }
-//
-////task 16
-//int twodots(int x1, int x2) {
-//    return fabs(x2 - x1);
-//}
+
+//task 16
+int distance_between_points(int coordinate_x1, int coordinate_x2) {
+    return abs(coordinate_x2 - coordinate_x1);
+}
 //
 ////task 17
 //int lenOtr(int a, int b, int c) {
