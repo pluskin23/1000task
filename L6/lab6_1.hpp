@@ -100,19 +100,19 @@ int geometric_mean(int num_a, int num_b) {
 }
 
 //task 10.1
-int sum_of_nonzero_numbers(int num_a, int num_b) {
+int sum_sq_of_nonzero_numbers(int num_a, int num_b) {
     if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
     }
-    return num_a + num_b;
+    return pow(num_a, 2) + pow(num_b, 2);
 }
 
 //task 10.2
-int diff_of_nonzero_numbers(int num_a, int num_b) {
+int diff_sq_of_nonzero_numbers(int num_a, int num_b) {
     if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
     }
-    return num_a - num_b;
+    return pow(num_a, 2) - pow(num_b, 2);
 }
 
 //task 10.3
@@ -133,46 +133,46 @@ int quot_sq_of_nonzero_numbers(int num_a, int num_b) {
 
 //task 10
 int sum_diff_prod_quot_of_nonzero_numbers(int num_a, int num_b) {
-    std::cout << sum_of_nonzero_numbers(num_a, num_b) << std::endl << diff_of_nonzero_numbers(num_a, num_b) << std::endl << prod_sq_of_nonzero_numbers(num_a, num_b) << std::endl << quot_sq_of_nonzero_numbers(num_a, num_b);
+    std::cout << sum_sq_of_nonzero_numbers(num_a, num_b) << std::endl << diff_sq_of_nonzero_numbers(num_a, num_b) << std::endl << prod_sq_of_nonzero_numbers(num_a, num_b) << std::endl << quot_sq_of_nonzero_numbers(num_a, num_b);
     return 0;
 }
 
 //task 11
-int sum_of_module_notnull_numders(int num_a, int num_b) {
-    if (num_a == 0 && num_b == 0) {
+int sum_of_modules_nonzero_numbers(int num_a, int num_b) {
+    if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
     }
     return fabs(num_a) + fabs(num_b);
 }
 
 //task 11.1
-int diff_of_module_notnull_numbers(int a, int b) {
-    if (a == 0 && b == 0) {
+int diff_of_modules_nonzero_numbers(int num_a, int num_b) {
+    if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
     }
-    return fabs(a) - fabs(b);
+    return fabs(num_a) - fabs(num_b);
 }
 
-//task 11.prod
-int prod_of_module_notnull_numbers(int a, int b) {
-    if (a == 0 && b == 0) {
+//task 11.2
+int prod_of_modules_nonzero_numbers(int num_a, int num_b) {
+    if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
     }
-    return fabs(a) * fabs(b);
+    return fabs(num_a) * fabs(num_b);
 }
 
-//task 11.quot
-int quot_of_module_notnull_numbers(int a, int b) {
-    if (a == 0 && b == 0) {
+//task 11.3
+int quot_of_modules_nonzero_numbers(int num_a, int num_b) {
+    if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
     }
-    return fabs(a) / fabs(b);
+    return fabs(num_a) / fabs(num_b);;
 }
 
 
 //task 11
-int sum_diif_prod_qout_of_module_notnull(int a, int b) {
-    std::cout << sum_of_module_notnull_numders(a, b) << diff_of_module_notnull_numbers(a, b) << prod_of_module_notnull_numbers(a, b) << quot_of_module_notnull_numbers(a, b);
+int sum_diif_prod_quot_of_modules_nonzero_numbers(int num_a, int num_b) {
+    std::cout << sum_of_modules_nonzero_numbers(num_a, num_b) << diff_of_modules_nonzero_numbers(num_a, num_b) << prod_of_modules_nonzero_numbers(num_a, num_b) << quot_of_modules_nonzero_numbers(num_a, num_b);
     return 0;
 }
 
