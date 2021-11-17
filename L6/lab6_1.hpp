@@ -283,19 +283,19 @@ int product_of_segments_ac_and_bc(int point_a, int point_b, int point_c){
     return segment_ac_on_numeric_line(point_a, point_b, point_c) * segment_bc_on_numeric_line(point_a, point_b, point_c);
 }
 
-////task 19.1
-//
-//int rectangle_perimeter(int coordinate_x1, int coordinate_y1, int coordinate_x2 int coordinate_y2 {
-//    if (x1 > x2 && y1 > y2) {
-//        std::cout << "x2 and y2 must be > x1 and y2";
-//    }
-//    int xy1 = x1 + y1;
-//    int xy2 = x2 + y2;
-//    double d = xy2 - xy1;
-//    double a = sqrt(d) / 2;
-//    double p = a * 4;
-//    return p;
-//}
+//task 19.1
+
+int rectangle_perimeter(int coordinate_x1, int coordinate_y1, int coordinate_x2 int coordinate_y2 {
+    if (x1 > x2 && y1 > y2) {
+        std::cout << "x2 and y2 must be > x1 and y2";
+    }
+    int xy1 = x1 + y1;
+    int xy2 = x2 + y2;
+    double d = xy2 - xy1;
+    double a = sqrt(d) / 2;
+    double p = a * 4;
+    return p;
+}
 
 ////task 19.2
 //int square_of_point_rectalnge(int x1, int x2, int y1, int y2) {
