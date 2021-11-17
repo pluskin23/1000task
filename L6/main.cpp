@@ -38,6 +38,8 @@ int main(){
     std::cout << diameter_and_length_of_circ_limited_by_circle(4) << std::endl;
     std::cout << "task16##################" << std::endl;
     std::cout << distance_between_points(6, 2) << std::endl;
+    std::cout << "task17##################" << std::endl;
+    std::cout << sum_segments_ac_and_bc(2, 3, 4) << std::endl;
     
      
     

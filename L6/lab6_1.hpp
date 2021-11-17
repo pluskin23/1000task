@@ -256,14 +256,20 @@ int diameter_and_length_of_circ_limited_by_circle(int square) {
 int distance_between_points(int coordinate_x1, int coordinate_x2) {
     return abs(coordinate_x2 - coordinate_x1);
 }
-//
-////task 17
-//int lenOtr(int a, int b, int c) {
-//    int ac = a + c;
-//    int bc = b + c;
-//    return ac = bc;
-//}
-//
+
+//task 17.1
+int segment_ac(int point_a, int point_b, int point_c) {
+    return point_a * point_c;
+}
+//task 17.2
+int segment_bc(int point_a, int point_b, int point_c){
+    return point_b * point_c;
+}
+//task 17
+int sum_segments_ac_and_bc(int point_a, int point_b, int point_c){
+    return segment_ac(point_a,point_b, point_c) + segment_bc(point_a,point_b, point_c);
+}
+    
 ////task 18
 //int lengthOtr(int a, int b, int c) {
 //    if (a < c < b) {
