@@ -133,11 +133,11 @@ int quot_sq_of_nonzero_numbers(int num_a, int num_b) {
 
 //task 10
 int sum_diff_prod_quot_of_nonzero_numbers(int num_a, int num_b) {
-    std::cout << sum_sq_of_nonzero_numbers(num_a, num_b) << std::endl << diff_sq_of_nonzero_numbers(num_a, num_b) << std::endl << prod_sq_of_nonzero_numbers(num_a, num_b) << std::endl << quot_sq_of_nonzero_numbers(num_a, num_b);
+    std::cout << sum_sq_of_nonzero_numbers(num_a, num_b) << std::endl << diff_sq_of_nonzero_numbers(num_a, num_b) << std::endl << prod_sq_of_nonzero_numbers(num_a, num_b) << std::endl << quot_sq_of_nonzero_numbers(num_a, num_b) << std::endl;
     return 0;
 }
 
-//task 11
+//task 11.1
 int sum_of_modules_nonzero_numbers(int num_a, int num_b) {
     if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
@@ -145,7 +145,7 @@ int sum_of_modules_nonzero_numbers(int num_a, int num_b) {
     return fabs(num_a) + fabs(num_b);
 }
 
-//task 11.1
+//task 11.2
 int diff_of_modules_nonzero_numbers(int num_a, int num_b) {
     if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
@@ -153,7 +153,7 @@ int diff_of_modules_nonzero_numbers(int num_a, int num_b) {
     return fabs(num_a) - fabs(num_b);
 }
 
-//task 11.2
+//task 11.3
 int prod_of_modules_nonzero_numbers(int num_a, int num_b) {
     if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
@@ -161,7 +161,7 @@ int prod_of_modules_nonzero_numbers(int num_a, int num_b) {
     return fabs(num_a) * fabs(num_b);
 }
 
-//task 11.3
+//task 11.4
 int quot_of_modules_nonzero_numbers(int num_a, int num_b) {
     if (num_a == 0 || num_b == 0) {
         std::cout << "numbers must be != 0";
@@ -172,25 +172,25 @@ int quot_of_modules_nonzero_numbers(int num_a, int num_b) {
 
 //task 11
 int sum_diif_prod_quot_of_modules_nonzero_numbers(int num_a, int num_b) {
-    std::cout << sum_of_modules_nonzero_numbers(num_a, num_b) << diff_of_modules_nonzero_numbers(num_a, num_b) << prod_of_modules_nonzero_numbers(num_a, num_b) << quot_of_modules_nonzero_numbers(num_a, num_b);
+    std::cout << sum_of_modules_nonzero_numbers(num_a, num_b) << std::endl << diff_of_modules_nonzero_numbers(num_a, num_b) << std::endl << prod_of_modules_nonzero_numbers(num_a, num_b) << std::endl << quot_of_modules_nonzero_numbers(num_a, num_b) << std::endl;
     return 0;
 }
 
-////task 12.1
-//int hypotenuse_of_triangle(int a, int b) {
-//    return sqrt(pow(a, 2) + pow(b, 2));
-//}
-//
-////task 12.2
-//int perimeter_of_right_triangle(int a, int b, int hypotenuse_of_triangle) {
-//    return a + b + hypotenuse_of_triangle;
-//}
-//
-////task 12
-//void hypotenuse_and_perimeter_of_right_triangle(int a, int b, int c) {
-//    std::cout << hypotenuse_of_triangle(a, b) << perimeter_of_right_triangle(a, b, c);
-//}
-//
+//task 12.1
+int hypotenuse_of_triangle(int a, int b) {
+    return sqrt(pow(a, 2) + pow(b, 2));
+}
+
+//task 12.2
+int perimeter_of_right_triangle(int a, int b, int hypotenuse_of_triangle) {
+    return a + b + hypotenuse_of_triangle;
+}
+
+//task 12
+void hypotenuse_and_perimeter_of_right_triangle(int a, int b, int c) {
+    std::cout << hypotenuse_of_triangle(a, b) << perimeter_of_right_triangle(a, b, c);
+}
+
 ////task 13.1
 //int square_of_circle1(int r1, int r2) {
 //    double p = 3.14;
