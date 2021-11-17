@@ -216,28 +216,27 @@ int square_of_circle_3(int square_of_circle_1, int square_of_circle_2) {
 //task 13
 int square_of_circles(int radius_1, int radius_2) {
     std::cout << square_of_circle_1(radius_1, radius_2) << std::endl << square_of_circle_2(radius_1, radius_2) << std::endl <<
-    square_of_circle_3(3, 2) << std::endl;
+    square_of_circle_3(28, 12) << std::endl;
     return 0;
 }
 
-////task 14.1
-//int radius_of_circle(int l) {
-//    double p = 3.14;
-//    return l / (2 * p);
-//}
-//
-////task 14.2
-//int square_of_limited_circle(int l) {
-//    double p = 3.14;
-//    int r = radius_of_circle(l);
-//    return p * pow(r, 2);
-//}
-//
-////task 14
-//void radius_and_square_of_circle(int l) {
-//    std::cout << radius_of_circle(l) << square_of_limited_circle(l);
-//}
-//
+//task 14.1
+int radius_cr_limited_by_circle(int length_l) {
+    return length_l / (2 * M_PI);
+}
+
+//task 14.2
+int square_cr_limited_by_circle(int lenght_l) {
+    int radius = radius_cr_limited_by_circle(lenght_l);
+    return M_PI * pow(radius, 2);
+}
+
+//task 14
+int radius_and_square_of_circle_bounded_by_circle(int lenght_l) {
+    std::cout << radius_cr_limited_by_circle(lenght_l) << std::endl << square_cr_limited_by_circle(lenght_l) << std::endl;
+    return 0;
+}
+
 ////task 15.1
 //int diameter_of_limiter_circle(double s) {
 //    double p = 3.14;

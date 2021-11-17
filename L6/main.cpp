@@ -31,7 +31,11 @@ int main(){
     std::cout << "task12##################" << std::endl;
     std::cout << hypotenuse_and_perimeter_of_right_triangle(2, 3, 4) << std::endl;
     std::cout << "task13##################" << std::endl;
-    std::cout << square_of_circles(3,2) << std::endl;
+    std::cout << square_of_circles(3, 2) << std::endl;
+    std::cout << "task14##################" << std::endl;
+    std::cout << radius_and_square_of_circle_bounded_by_circle(32) << std::endl;
+    
+    
     
     
     
